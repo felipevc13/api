@@ -3,14 +3,9 @@ import styled from "styled-components";
 import { Header } from "@buffetjs/custom";
 import { Table } from "@buffetjs/core";
 import axios from "axios";
-import createStrapi from "strapi";
 
 const Wrapper = styled.div`
   padding: 18px 30px;
-
-  p {
-    margin-top: 1rem;
-  }
 `;
 
 const HomePage = () => {
@@ -45,7 +40,7 @@ const HomePage = () => {
     <Wrapper>
       <Header
         title={{ label: "React Avançado Repositories" }}
-        content="A list of our repositories in React Avançado course."
+        content="A list of our repositories in React Avançado course"
       />
       <Table headers={headers} rows={rows} />
     </Wrapper>
